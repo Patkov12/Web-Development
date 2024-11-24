@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Title and Description */
+#title {
+  text-align: center;
+  margin: 20px 0 10px; /* Add spacing around the title */
+  color: #007BFF;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px; /* Add spacing after the description */
+  font-size: 1.1em;
+  color: #555;
+}
+
+
+form {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Form Inputs */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Feedback Images */
+.selection {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.selection img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="radio"]:checked + img {
+  border-color: #007BFF;
+  transform: scale(1.1);
+}
+
+/* Checkbox Section */
+label[for="like"] {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Buttons (optional) */
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .selection img {
+    width: 60px;
+    height: 60px;
+  }
+}
